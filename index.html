@@ -5,15 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#000000">
   <meta name="description" content="El 8 de enero de 2027 cumplo mis XV y te espero para celebrar juntos.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
   <meta property="og:title" content="Mis XV · Jimena">
   <meta property="og:description" content="El 8 de enero de 2027 cumplo mis XV y te espero para celebrar juntos.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/nadulog/invitacion-Jimena/main/assets/compartir-whatsapp.jpg">
+  <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/nadulog/invitacion-Jimena/main/assets/compartir-whatsapp.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Jimena, Mis XV">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mis XV · Jimena">
+  <meta name="twitter:description" content="El 8 de enero de 2027 cumplo mis XV y te espero para celebrar juntos.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/nadulog/invitacion-Jimena/main/assets/compartir-whatsapp.jpg">
   <title>Jimena · Mis XV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@300;400;500&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="effects.css">
 </head>
-<body>
+<body class="intro-open">
+  <!-- Lluvia (efecto global) -->
+  <canvas class="rain" aria-hidden="true"></canvas>
+
+  <!-- Intro: andén de subte -->
+  <section class="intro" aria-labelledby="intro-title">
+    <div class="intro__tunnel" aria-hidden="true">
+      <div class="intro__ceiling"></div>
+      <div class="intro__floor"></div>
+      <div class="intro__glow"></div>
+      <div class="intro__train">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="intro__content">
+      <div class="intro__sign">
+        <p class="intro__eyebrow">PRÓXIMA PARADA</p>
+        <p class="intro__xv">MIS XV</p>
+        <h1 id="intro-title" class="intro__name">Jimena</h1>
+        <div class="intro__rule" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+      <p class="intro__question">¿CÓMO QUERÉS ENTRAR?</p>
+      <div class="intro__actions">
+        <button type="button" class="intro__btn intro__btn--music" data-enter-with-music><span aria-hidden="true">♪</span> ENTRAR CON MÚSICA</button>
+        <button type="button" class="intro__btn" data-enter-without-music>ENTRAR SIN MÚSICA</button>
+      </div>
+    </div>
+    <div class="intro__rush" aria-hidden="true"></div>
+  </section>
+
   <main class="invitation">
     <!-- 1. Portada -->
     <section class="panel" aria-label="Portada: Mis XV, Jimena">
@@ -23,8 +65,8 @@
     <!-- 2. Invitados -->
     <section class="panel guests" aria-labelledby="nombres-invitados">
       <img src="assets/02-invitados.png" alt="Invitados. Esta invitación es para" width="941" height="1672" loading="lazy" decoding="async">
-      <h2 id="nombres-invitados" class="guests__names">Nombre del invitado</h2>
-      <p id="cantidad-lugares" class="guests__places">—</p>
+      <h2 id="nombres-invitados" class="guests__names"></h2>
+      <p id="cantidad-lugares" class="guests__places"></p>
     </section>
 
     <!-- 3. Cuenta regresiva -->
@@ -104,6 +146,14 @@
     <a class="hotspot footer__link footer__link--web" href="https://bloomdate-site.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar el sitio web de BloomDate"></a>
   </footer>
 
+  <audio id="backgroundMusic" preload="none" loop>
+    <source src="assets/musica.mp3" type="audio/mpeg">
+  </audio>
+  <button class="audio-toggle" type="button" aria-label="Reproducir música" aria-pressed="false">
+    <span class="audio-toggle__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="audio-toggle__note" aria-hidden="true">♪</span>
+  </button>
+
   <dialog class="location-modal" aria-labelledby="location-modal-title">
     <button class="location-modal__close" type="button" data-close-location aria-label="Cerrar">&times;</button>
     <p class="location-modal__eyebrow">¿CÓMO QUERÉS LLEGAR?</p>
@@ -127,6 +177,7 @@
   </dialog>
 
   <script src="script.js"></script>
+  <script src="effects.js"></script>
   <script src="invitation-personalization.js"></script>
 </body>
 </html>

@@ -40,7 +40,8 @@
       var totalPasses = 1 + companions.length;
       var passesEl = document.getElementById("cantidad-lugares");
       if (passesEl) {
-        passesEl.textContent = "Tenés " + totalPasses + (totalPasses === 1 ? " lugar reservado" : " lugares reservados");
+        // La imagen ya trae impreso "LUGARES RESERVADOS": acá va solo el número debajo.
+        passesEl.textContent = String(totalPasses);
       }
 
       var confirmBtn = document.getElementById("boton-confirmar");
