@@ -1,6 +1,7 @@
 (function () {
-  // 8 de enero de 2027, 21:30 hora de Argentina
-  var EVENT_DATE = new Date("2027-01-08T21:30:00-03:00").getTime();
+  // Fecha del evento (hora Argentina). Cada versión la define en <body data-event-date="...">.
+  // Por defecto: 8 de enero de 2027, 21:30.
+  var EVENT_DATE = new Date(document.body.getAttribute("data-event-date") || "2027-01-08T21:30:00-03:00").getTime();
   var els = {};
   ["days", "hours", "minutes", "seconds"].forEach(function (unit) {
     els[unit] = document.querySelector('[data-unit="' + unit + '"]');
