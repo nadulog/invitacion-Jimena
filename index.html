@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="El 8 de enero de 2027 cumplo mis XV y te espero para celebrar juntos.">
+  <meta property="og:title" content="Mis XV · Jimena">
+  <meta property="og:description" content="El 8 de enero de 2027 cumplo mis XV y te espero para celebrar juntos.">
+  <title>Jimena · Mis XV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@300;400;500&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="invitation">
+    <!-- 1. Portada -->
+    <section class="panel" aria-label="Portada: Mis XV, Jimena">
+      <img src="assets/01-portada.png" alt="Mis XV, Jimena" width="941" height="1672" fetchpriority="high">
+    </section>
+
+    <!-- 2. Invitados -->
+    <section class="panel guests" aria-labelledby="nombres-invitados">
+      <img src="assets/02-invitados.png" alt="Invitados. Esta invitación es para" width="941" height="1672" loading="lazy" decoding="async">
+      <h2 id="nombres-invitados" class="guests__names">Nombre del invitado</h2>
+      <p id="cantidad-lugares" class="guests__places">—</p>
+    </section>
+
+    <!-- 3. Cuenta regresiva -->
+    <section class="panel" aria-label="Cuenta regresiva">
+      <img src="assets/03-cuenta-regresiva.png" alt="Próxima parada: cuenta regresiva. Mis XV, Jimena" width="941" height="1672" loading="lazy" decoding="async">
+      <div class="countdown" aria-live="polite">
+        <strong data-unit="days">0</strong>
+        <strong data-unit="hours">00</strong>
+        <strong data-unit="minutes">00</strong>
+        <strong data-unit="seconds">00</strong>
+      </div>
+    </section>
+
+    <!-- 4. Fecha y hora -->
+    <section class="panel" aria-label="Fecha y hora">
+      <img src="assets/04-fecha-hora.png" alt="8 de enero de 2027, de 21:30 a 05:30" width="941" height="1672" loading="lazy" decoding="async">
+    </section>
+
+    <!-- 5. Cómo llegar -->
+    <section class="panel panel--fade-sm" aria-label="Cómo llegar">
+      <img src="assets/05-como-llegar.png" alt="Cómo llegar: Salón Caiuc" width="941" height="1672" loading="lazy" decoding="async">
+      <button class="hotspot hotspot--location" type="button" data-open-location aria-label="Ver cómo llegar al Salón Caiuc">VER UBICACIÓN</button>
+    </section>
+
+    <!-- 6. Dress code -->
+    <section class="panel" aria-label="Dress code">
+      <img src="assets/06-dress-code.png" alt="Dress code elegante. Se reservan los colores blanco y plateado." width="941" height="1672" loading="lazy" decoding="async">
+    </section>
+
+    <!-- Galería -->
+    <section class="gallery" aria-labelledby="gallery-title">
+      <span class="gallery__track" aria-hidden="true"></span>
+      <header class="gallery__header">
+        <h2 id="gallery-title">Un poquito de mí</h2>
+        <div class="gallery__rule" aria-hidden="true"><i class="node node--start"></i><i class="node node--mid"></i><i class="node node--end"></i></div>
+      </header>
+      <div class="gallery__grid">
+        <button class="gallery__item" type="button" data-index="0" aria-label="Ampliar foto 1 de Jimena"><img src="assets/galeria-01.jpg" alt="Jimena" width="1067" height="1600" loading="lazy" decoding="async"><span class="gallery__tag">01</span></button>
+        <button class="gallery__item" type="button" data-index="1" aria-label="Ampliar foto 2 de Jimena"><img src="assets/galeria-02.jpg" alt="Jimena" width="1067" height="1600" loading="lazy" decoding="async"><span class="gallery__tag">02</span></button>
+        <button class="gallery__item gallery__item--wide" type="button" data-index="2" aria-label="Ampliar foto 3 de Jimena"><img src="assets/galeria-03.jpg" alt="Jimena" width="1600" height="1067" loading="lazy" decoding="async"><span class="gallery__tag">03</span></button>
+        <button class="gallery__item gallery__item--square" type="button" data-index="3" aria-label="Ampliar foto 4 de Jimena"><img src="assets/galeria-04.jpg" alt="Jimena" width="1600" height="1067" loading="lazy" decoding="async" style="object-position: 60% 50%"><span class="gallery__tag">04</span></button>
+        <button class="gallery__item gallery__item--square" type="button" data-index="4" aria-label="Ampliar foto 5 de Jimena"><img src="assets/galeria-05.jpg" alt="Jimena" width="1600" height="1067" loading="lazy" decoding="async" style="object-position: 25% 50%"><span class="gallery__tag">05</span></button>
+        <button class="gallery__item gallery__item--wide" type="button" data-index="5" aria-label="Ampliar foto 6 de Jimena"><img src="assets/galeria-06.jpg" alt="Jimena" width="1600" height="1067" loading="lazy" decoding="async"><span class="gallery__tag">06</span></button>
+      </div>
+      <div class="gallery__rule gallery__rule--end" aria-hidden="true"><i class="node node--start"></i><i class="node node--mid"></i><i class="node node--end"></i></div>
+    </section>
+
+    <!-- 7. BloomKeep -->
+    <section class="panel panel--fade-xs" aria-label="BloomKeep">
+      <img src="assets/07-bloomkeep.png" alt="BloomKeep. Subí tus fotos de la noche y armemos juntos mi álbum de recuerdos." width="941" height="1672" loading="lazy" decoding="async">
+      <a class="hotspot hotspot--bloomkeep" href="https://app.bloomkeep.site/jimena-15" target="_blank" rel="noopener noreferrer" aria-label="Subir fotos a BloomKeep">SUBIR FOTOS</a>
+    </section>
+
+    <!-- 8. Música -->
+    <section class="panel" aria-label="Música">
+      <img src="assets/08-musica.png" alt="Música. ¿Qué tema no puede faltar esa noche?" width="941" height="1672" loading="lazy" decoding="async">
+      <a class="hotspot hotspot--music" href="https://open.spotify.com/playlist/230DyHPOD3z4TguuSzpVsB?si=duwRm9iiQ0m_94Zo9rkxrA&amp;utm_source=whatsapp&amp;pt=2af5bd640beec4330c73b940c95f4e68&amp;pi=3EzPssaHSRust" target="_blank" rel="noopener noreferrer" aria-label="Sugerir un tema">SUGERÍ UN TEMA</a>
+    </section>
+
+    <!-- 9. Confirmación de asistencia -->
+    <section class="panel" aria-label="Confirmación de asistencia">
+      <img src="assets/09-confirmacion.png" alt="Confirmación de asistencia. Confirmá hasta el 30/12/2026" width="941" height="1672" loading="lazy" decoding="async">
+      <a id="boton-confirmar" class="hotspot hotspot--rsvp" href="https://bloomdate-rsvp.netlify.app/r/cumple-xv-jimena" target="_blank" rel="noopener noreferrer" aria-label="Confirmar asistencia a los XV de Jimena">CONFIRMAR ASISTENCIA</a>
+    </section>
+
+    <!-- 10. Te espero -->
+    <section class="panel" aria-label="Te espero, Jimena">
+      <img src="assets/10-te-espero.png" alt="Te espero. Jimena" width="941" height="1672" loading="lazy" decoding="async">
+    </section>
+  </main>
+
+  <!-- 11. Footer -->
+  <footer class="footer">
+    <img src="assets/11-footer.png" alt="Hecho con amor por BloomDate" width="2172" height="724" loading="lazy" decoding="async">
+    <a class="hotspot footer__link footer__link--wa" href="https://wa.me/5491140436324" target="_blank" rel="noopener noreferrer" aria-label="Escribir a BloomDate por WhatsApp"></a>
+    <a class="hotspot footer__link footer__link--ig" href="https://www.instagram.com/bloomdate.invitaciones/" target="_blank" rel="noopener noreferrer" aria-label="Seguir a BloomDate en Instagram"></a>
+    <a class="hotspot footer__link footer__link--web" href="https://bloomdate-site.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar el sitio web de BloomDate"></a>
+  </footer>
+
+  <dialog class="location-modal" aria-labelledby="location-modal-title">
+    <button class="location-modal__close" type="button" data-close-location aria-label="Cerrar">&times;</button>
+    <p class="location-modal__eyebrow">¿CÓMO QUERÉS LLEGAR?</p>
+    <h2 id="location-modal-title">Salón Caiuc</h2>
+    <p class="location-modal__address">Club Atlético Independiente Unión Cultural</p>
+    <div class="location-modal__divider" aria-hidden="true"><span></span></div>
+    <div class="location-modal__actions">
+      <a href="https://www.google.com/maps/search/Club%20Atl%C3%A9tico%20Independiente%20Uni%C3%B3n%20Cultural/@-31.01270067,-62.66619053,17z?hl=es" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span>ABRIR EN GOOGLE MAPS</a>
+      <a href="https://www.waze.com/ul?ll=-31.01270067,-62.66619053&amp;navigate=yes" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">◉</span>ABRIR EN WAZE</a>
+      <button type="button" data-copy-location><span aria-hidden="true">⎘</span>COPIAR UBICACIÓN</button>
+    </div>
+    <span class="location-modal__status" aria-live="polite"></span>
+  </dialog>
+
+  <dialog class="lightbox" aria-label="Foto ampliada de Jimena">
+    <button class="lightbox__close" type="button" data-close-lightbox aria-label="Cerrar">&times;</button>
+    <img class="lightbox__img" src="" alt="Foto ampliada de Jimena">
+    <button class="lightbox__nav lightbox__nav--prev" type="button" data-prev aria-label="Foto anterior">‹</button>
+    <button class="lightbox__nav lightbox__nav--next" type="button" data-next aria-label="Foto siguiente">›</button>
+    <p class="lightbox__counter" aria-live="polite"></p>
+  </dialog>
+
+  <script src="script.js"></script>
+  <script src="invitation-personalization.js"></script>
+</body>
+</html>
