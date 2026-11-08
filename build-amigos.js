@@ -3,7 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const WHATSAPP = "5491135634102";
+const WHATSAPP = "5493563410226";
 const MENSAJE = "¡Hola! Confirmo mi asistencia a los XV de Jimena 🎉";
 const FECHA_EVENTO = "2027-01-09T01:00:00-03:00"; // la noche del 8 de enero, a la 01:00
 
