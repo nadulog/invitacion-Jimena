@@ -308,3 +308,19 @@ button.hotspot { background: transparent; border: 0; padding: 0; cursor: pointer
 .footer__link--wa  { left: 37.4%; }
 .footer__link--ig  { left: 47.1%; }
 .footer__link--web { left: 56.9%; }
+
+/* Versión amigos: aclaración debajo del horario */
+.schedule__note {
+  position: absolute;
+  left: 7.3%;
+  top: 62.4%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2.65cqi;
+  line-height: 1.2;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: #e3121b;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, .85);
+}

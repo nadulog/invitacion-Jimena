@@ -28,6 +28,8 @@ if (html.includes('id="nombres-invitados"')) throw new Error("No se pudo quitar 
 // 4. Imagen de fecha y hora de amigos
 replaceOnce('src="../assets/04-fecha-hora.png" alt="8 de enero de 2027, de 21:30 a 05:30"',
             'src="../assets/04-fecha-hora-amigos.png" alt="8 de enero de 2027, de 01:00 a 05:30"');
+replaceOnce('alt="8 de enero de 2027, de 01:00 a 05:30" width="941" height="1672" loading="lazy" decoding="async">',
+            'alt="8 de enero de 2027, de 01:00 a 05:30" width="941" height="1672" loading="lazy" decoding="async">\n      <p class="schedule__note">Madrugada del 9 de enero</p>');
 html = html.replace(/El 8 de enero de 2027 cumplo mis XV y te espero para celebrar juntos\./g,
                     "El 8 de enero de 2027 cumplo mis XV y te espero desde la 01:00 para celebrar juntos.");
 
